@@ -1,0 +1,12 @@
+# Telco Datasets
+
+1. Kaggle Telcom Data: Real Variable Names
+    - Main Link: https://www.kaggle.com/blastchar/telco-customer-churn
+
+
+2. KDD 2019 Telco Churn: Anonymized Variable Names
+    - Main Link: https://www.kdd.org/kdd-cup/view/kdd-cup-2009/Data
+    - orange_small_train.data.zip
+    - orange_small_train_appentency.labels
+    - orange_small_train_churn.labels
+    - orange_small_train_upselling.labels
