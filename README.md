@@ -12,7 +12,11 @@ System Requirements:
 - For python data science libraries, please install the latest Anaconda Python 3 Distribution (currently Python 3.7) for your OS:https://www.anaconda.com/distribution/
 - Detailed install instruction & troubleshooting is available at http://docs.anaconda.com/anaconda/install/
 - Once you have anaconda installed. You can use conda command to install all required packages as
+
 ```
-conda create --file=viz.yaml
-conda activate viz
+conda env create --file vis.yaml
+conda activate vis
+
+python install_check.py
+>>> All-Set! Packages installed.
 ```

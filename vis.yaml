@@ -1,0 +1,31 @@
+name: vis
+channels:
+  - conda-forge
+dependencies:
+  - jupyterlab
+  - numpy
+  - pandas
+  - scikit-learn
+  - requests
+  - matplotlib
+  - altair
+  - bokeh
+  - datashader
+  - holoviews
+  - plotly
+  - seaborn
+  - dash
+  - pdvega
+  - vega_datasets
+  - chartify
+  - dash
+  - panel
+  - voila
+  - plotnine
+  - pip
+  - pip:
+    - plotly_express
+    - cufflinks
+    
+
+
