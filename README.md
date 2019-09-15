@@ -1,7 +1,6 @@
-# data-vis-workshop
-Data Visualisation Workshop
+# Data Visualisation Workshop
 
-# Setup instructions.
+## Setup instructions.
 System Requirements: 
 
 - You need a laptop for hands-on coding during the workshop, with the following minimum specifications:
