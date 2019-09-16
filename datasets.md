@@ -1,9 +1,6 @@
 # Datasets
 
-
-# Data
-
-The following datasets are available in the repo
+The following datasets are available in the repo:
 
 ## Sample
 
@@ -27,19 +24,31 @@ Metadata
 
 This is a sample dataset for a Telo aiming predicting customer behavior to retain them. The key target of the analysis is the churn feature - customers that left the service with the last month. Each row represents a customer, each column contains customer’s attributes described on the column Metadata.
 
+
+|CustomerID|Gender|SeniorCitizen|Partner|Dependents|Tenure|PhoneService|MultipleLines   |InternetService|OnlineSecurity     |OnlineBackup       |DeviceProtection   |TechSupport        |StreamingTV        |StreamingMovies    |Contract      |PaperlessBilling|PaymentMethod            |MonthlyCharges|TotalCharges|Churn|
+|----------|------|-------------|-------|----------|------|------------|----------------|---------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|--------------|----------------|-------------------------|--------------|------------|-----|
+|7590-VHVEG|Female|0            |Yes    |No        |1     |No          |No phone service|DSL            |No                 |Yes                |No                 |No                 |No                 |No                 |Month-to-month|Yes             |Electronic check         |29.85         |29.85       |No   |
+|5575-GNVDE|Male  |0            |No     |No        |34    |Yes         |No              |DSL            |Yes                |No                 |Yes                |No                 |No                 |No                 |One year      |No              |Mailed check             |56.95         |1889.5      |No   |
+|3668-QPYBK|Male  |0            |No     |No        |2     |Yes         |No              |DSL            |Yes                |Yes                |No                 |No                 |No                 |No                 |Month-to-month|Yes             |Mailed check             |53.85         |108.15      |Yes  |
+|7795-CFOCW|Male  |0            |No     |No        |45    |No          |No phone service|DSL            |Yes                |No                 |Yes                |Yes                |No                 |No                 |One year      |No              |Bank transfer (automatic)|42.3          |1840.75     |No   |
+|9237-HQITU|Female|0            |No     |No        |2     |Yes         |No              |Fiber optic    |No                 |No                 |No                 |No                 |No                 |No                 |Month-to-month|Yes             |Electronic check         |70.7          |151.65      |Yes  |
+|9305-CDSKC|Female|0            |No     |No        |8     |Yes         |Yes             |Fiber optic    |No                 |No                 |Yes                |No                 |Yes                |Yes                |Month-to-month|Yes             |Electronic check         |99.65         |820.5       |Yes  |
+|1452-KIOVK|Male  |0            |No     |Yes       |22    |Yes         |Yes             |Fiber optic    |No                 |Yes                |No                 |No                 |Yes                |No                 |Month-to-month|Yes             |Credit card (automatic)  |89.1          |1949.4      |No   |
+
+
 Data Columns
 
 - Customer Account Information
-  - `customerID`: Unique ID for the customer
-  - `Churn`: Customers who left within the last month 
-  - `tenure`: How long they’ve been a customer
-  - `contract`:
-  - `PaymentMethod`: What payment method is used by the customer
-  - `PaperlessBilling`: Whether the customer has subscribed to paperless billing
-  - `MonthlyCharges`: What was the monthly charges for the customer
-  - `TotalCharges`: What were the total chareges for the customer
+  - `CustomerID`: Unique ID for the customer *(unique String)*?
+  - `Churn`: Customers who left within the last month *(Yes or No)*?
+  - `Tenure`: How long they’ve been a customer *(In months, Integer)*?
+  - `Contract`: What type of contract do they have *(Month-to-month, One year, Two year)*?
+  - `PaymentMethod`: What payment method is used by the customer *(Electronic check, Mailed check, Bank transfer, or Credit card)*?
+  - `PaperlessBilling`: Whether the customer has subscribed to paperless billing *(Yes or No)*?
+  - `MonthlyCharges`: What was the monthly charges for the customer (Amount, Float)?
+  - `TotalCharges`: What were the total charges for the customer (Amount, Float)?
 - Customer Demographics 
-  - `gender`: What is the gender of the customer *(Male or Female)*?
+  - `Gender`: What is the gender of the customer *(Male or Female)*?
   - `SeniorCitizen`: Whether the customer is a Senior Citizen or not *(0 or 1)*?
   - `Partner`: Whether the customer has a partner *(Yes or No)*?
   - `Dependents`: Whether the customer has any dependents *(Yes or No)*?
@@ -121,7 +130,7 @@ Metadata
 
 
 
-# Vega Datasets
+## Vega Datasets
 
 Additional datasets are available to play with from `vega_datasets` repository. You can access them as below.
 

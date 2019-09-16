@@ -1,31 +1,31 @@
 # Data Visualisation Workshop
 
-## Session Plan
+### Session Plan
 
 **Day 1**
 
-- **Workshop Introduction**
-- **Session #1: Value of Data Visualisation**
-- **Session #2: Tools & Abstractions for Data Visualisation**
-- **Session #3: Theory of Data Visualisation**
-- **Session #4: Guidelines for Better Data Visualisation**
-- **Day One Summary**
-- **Data-Story Group Exercise**
+- *Workshop Introduction*
+- *Session #1: Value of Data Visualisation*
+- *Session #2: Tools & Abstractions for Data Visualisation*
+- *Session #3: Theory of Data Visualisation*
+- *Session #4: Guidelines for Better Data Visualisation*
+- *Day One Summary*
+- *Data-Story Group Exercise*
 
 **Day 2**
 
-- **Recap & Questions**
-- **Data-Story Presentations**
-- **Session #5: Crafting Visual Stories with Data**
-- **Data-Story Rework**
-- **Session #6: Interactivity**
-- **Session #7: Explorable Vis for Business Users**
-- **Session #8: Putting together an Interactive Application**
-- **Overall Summary & Way Forward**
+- *Recap & Questions*
+- *Data-Story Presentations*
+- *Session #5: Crafting Visual Stories with Data*
+- *Data-Story Rework*
+- *Session #6: Interactivity*
+- *Session #7: Explorable Vis for Business Users*
+- *Session #8: Putting together an Interactive Application*
+- *Overall Summary & Way Forward*
 
 Detailed session plan can be accessed on [session.md](session.md)
 
-## Setup & Installation
+### Setup & Installation
 
 System Requirements: 
 
@@ -43,8 +43,11 @@ Step 2:
 - Please download using https://github.com/amitkaps/data-vis-workshop/archive/master.zip or clone the repo from: https://github.com/amitkaps/data-vis-workshop.git
 
 Step 3:
-- Once you have repo cloned Anaconda installed, you can use the following conda commands to install all the required packages.
-- If you are on Windows, then please use the Anaconda Prompt (and not command prompt)
+- Once you have Anaconda installed (Step 1) and downloaded or cloned the repo (Step 3), you can use the following conda commands to install all the required packages. 
+
+Please note:
+- Do `cd` into the folder and then run these commands.
+- If you are on Windows, then please only use the Anaconda Prompt (and not command prompt)
 
 ```
 conda env create --file vis.yaml
@@ -53,5 +56,9 @@ conda activate vis
 python install_check.py
 >>> All-Set! Packages installed.
 ```
+
+### Datasets
+
+The list of datasets are available in the `data` folder and you can read about them at (datasets.md)[datasets.md]
 
 
