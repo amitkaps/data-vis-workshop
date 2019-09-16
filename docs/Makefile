@@ -1,7 +1,7 @@
 SORUCES=$(wildcard ../notebooks/*.ipynb)
-IPYNB=$(shell echo $(SORUCES) | sed 's/\.\.\/notebooks\///g')
 TARGETS=$(IPYNB:.ipynb=.html)
-DEST=../docs/
+HTML=$(shell echo $(TARGETS) | sed 's/\.\.\/notebooks\///g')
+SOURCEDIR=../notebooks
 
 push: $(TARGETS)
 	cd .. && git add docs && cd -
@@ -13,8 +13,8 @@ push: $(TARGETS)
 
 build: $(TARGETS)
 
-$(DEST)%.html: %.ipynb
-	jupyter nbconvert $< --output $@
+%.html: %.ipynb
+	jupyter nbconvert $(SOURCEDIR)/$<
 
 clean:
 	-rm $(TARGETS) push
