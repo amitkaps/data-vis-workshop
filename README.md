@@ -1,5 +1,9 @@
 # Data Visualisation Workshop
 
+## Session Plan
+
+
+
 ## Setup instructions.
 System Requirements: 
 
