@@ -23,7 +23,7 @@
 - *Session #8: Putting together an Interactive Application*
 - *Overall Summary & Way Forward*
 
-Detailed session plan can be accessed on [session.md](session.md)
+Detailed session plan can be read at [session.md](session.md)
 
 ### Setup & Installation
 
@@ -59,6 +59,6 @@ python install_check.py
 
 ### Datasets
 
-The list of datasets are available in the `data` folder and you can read about them at (datasets.md)[datasets.md]
+The list of datasets are available in the `data` folder and you can read about them at [datasets.md](datasets.md)
 
 
