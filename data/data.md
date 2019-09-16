@@ -27,12 +27,6 @@ Metadata
 
 This is a sample dataset for a Telo aiming predicting customer behavior to retain them. The key target of the analysis is the churn feature - customers that left the service with the last month. Each row represents a customer, each column contains customer’s attributes described on the column Metadata.
 
-'customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
-       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
-       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
-       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
-       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'
-
 Data Columns
 
 - Customer Account Information
@@ -127,10 +121,12 @@ Metadata
 
 
 
+# Vega Datasets
 
-2. KDD 2019 Telco Churn: Anonymized Variable Names
-    - Main Link: https://www.kdd.org/kdd-cup/view/kdd-cup-2009/Data
-    - orange_small_train.data.zip
-    - orange_small_train_appentency.labels
-    - orange_small_train_churn.labels
-    - orange_small_train_upselling.labels
+Additional datasets are available to play with from `vega_datasets` repository. You can access them as below.
+
+```
+from vega_datasets import data 
+gapminder = data.gapminder()
+gapminder.head()
+```
