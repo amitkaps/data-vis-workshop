@@ -17,6 +17,7 @@ dependencies:
   - dash
   - pdvega
   - vega_datasets
+  - vega
   - chartify
   - dash
   - panel
@@ -26,6 +27,3 @@ dependencies:
   - pip:
     - plotly_express
     - cufflinks
-    
-
-
