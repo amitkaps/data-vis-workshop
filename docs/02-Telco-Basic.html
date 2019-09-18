@@ -13084,6 +13084,54 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Churn">Churn<a class="anchor-link" href="#Churn">&#182;</a></h2><p>This is a sample dataset for a Telo aiming predicting customer behavior to retain them. The key target of the analysis is the churn feature - customers that left the service with the last month. Each row represents a customer, each column contains customer’s attributes described on the column Metadata.</p>
+<p>Data Columns</p>
+<ul>
+<li>Customer Account Information<ul>
+<li><code>CustomerID</code>: Unique ID for the customer <em>(unique String)</em>?</li>
+<li><code>Churn</code>: Customers who left within the last month <em>(Yes or No)</em>?</li>
+<li><code>Tenure</code>: How long they’ve been a customer <em>(In months, Integer)</em>?</li>
+<li><code>Contract</code>: What type of contract do they have <em>(Month-to-month, One year, Two year)</em>?</li>
+<li><code>PaymentMethod</code>: What payment method is used by the customer <em>(Electronic check, Mailed check, Bank transfer, or Credit card)</em>?</li>
+<li><code>PaperlessBilling</code>: Whether the customer has subscribed to paperless billing <em>(Yes or No)</em>?</li>
+<li><code>MonthlyCharges</code>: What was the monthly charges for the customer (Amount, Float)?</li>
+<li><code>TotalCharges</code>: What were the total charges for the customer (Amount, Float)?</li>
+</ul>
+</li>
+<li>Customer Demographics <ul>
+<li><code>Gender</code>: What is the gender of the customer <em>(Male or Female)</em>?</li>
+<li><code>SeniorCitizen</code>: Whether the customer is a Senior Citizen or not <em>(0 or 1)</em>?</li>
+<li><code>Partner</code>: Whether the customer has a partner <em>(Yes or No)</em>?</li>
+<li><code>Dependents</code>: Whether the customer has any dependents <em>(Yes or No)</em>?</li>
+</ul>
+</li>
+<li>Customer Signed Up Service Status<ul>
+<li><code>PhoneService</code>: Signed up for Phone Service <em>(Yes or No)</em>?</li>
+<li><code>MultipleLines</code>: Signed up for Multiple Lines <em>(Yes or No or No Phone Service)</em>?</li>
+<li><code>InternetService</code>: Signed up for Internet Service <em>(DSL or Fiber optic or No)</em>?</li>
+<li><code>OnlineSecurity</code>: Signed up for Online Security <em>(Yes or No or No internet service)</em>?</li>
+<li><code>OnlineBackup</code>: Signed up for Online Backup <em>(Yes or No or No internet service)</em>?</li>
+<li><code>DeviceProtection</code>: Signed up for Device Protection plan <em>(Yes or No or No internet service)</em>?</li>
+<li><code>TechSupport</code>: Signed up for Tech Support <em>(Yes or No or No internet service)</em>?</li>
+<li><code>StreamingTV</code>: Signed up for Streaming TV <em>(Yes or No or No internet service)</em>?</li>
+<li><code>StreamingMovies</code>: Signed up for Streaming Movies <em>(Yes or No or No internet service)</em>?</li>
+</ul>
+</li>
+</ul>
+<p>Metadata</p>
+<ul>
+<li>Filename: <code>churn.csv</code></li>
+<li>Observations <code>(n)</code> : 7043</li>
+<li>Dimensions <code>(p)</code>   : 21</li>
+</ul>
+<p>Source: Kaggle Telcom Customer Churn @ <a href="https://www.kaggle.com/blastchar/telco-customer-churn">https://www.kaggle.com/blastchar/telco-customer-churn</a></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
