@@ -13560,6 +13560,51 @@ dtype: object</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Tenure</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0       (-0.072, 3.6]
+1        (32.4, 36.0]
+2       (-0.072, 3.6]
+3        (43.2, 46.8]
+4       (-0.072, 3.6]
+            ...      
+7038     (21.6, 25.2]
+7039     (68.4, 72.0]
+7040     (10.8, 14.4]
+7041       (3.6, 7.2]
+7042     (64.8, 68.4]
+Name: Tenure, Length: 7043, dtype: category
+Categories (20, interval[float64]): [(-0.072, 3.6] &lt; (3.6, 7.2] &lt; (7.2, 10.8] &lt; (10.8, 14.4] ... (57.6, 61.2] &lt; (61.2, 64.8] &lt; (64.8, 68.4] &lt; (68.4, 72.0]]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
