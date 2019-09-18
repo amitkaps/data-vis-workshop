@@ -13722,6 +13722,347 @@ Categories (20, interval[float64]): [(-0.072, 3.6] &lt; (3.6, 7.2] &lt; (7.2, 10
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Churn</span><span class="o">==</span><span class="s2">&quot;Yes&quot;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[32]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>Gender</th>
+      <th>SeniorCitizen</th>
+      <th>Partner</th>
+      <th>Dependents</th>
+      <th>Tenure</th>
+      <th>PhoneService</th>
+      <th>MultipleLines</th>
+      <th>InternetService</th>
+      <th>OnlineSecurity</th>
+      <th>...</th>
+      <th>DeviceProtection</th>
+      <th>TechSupport</th>
+      <th>StreamingTV</th>
+      <th>StreamingMovies</th>
+      <th>Contract</th>
+      <th>PaperlessBilling</th>
+      <th>PaymentMethod</th>
+      <th>MonthlyCharges</th>
+      <th>TotalCharges</th>
+      <th>Churn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>3668-QPYBK</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>No</td>
+      <td>No</td>
+      <td>2</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>DSL</td>
+      <td>Yes</td>
+      <td>...</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Month-to-month</td>
+      <td>Yes</td>
+      <td>Mailed check</td>
+      <td>53.85</td>
+      <td>108.15</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>9237-HQITU</td>
+      <td>Female</td>
+      <td>0</td>
+      <td>No</td>
+      <td>No</td>
+      <td>2</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Fiber optic</td>
+      <td>No</td>
+      <td>...</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Month-to-month</td>
+      <td>Yes</td>
+      <td>Electronic check</td>
+      <td>70.70</td>
+      <td>151.65</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>9305-CDSKC</td>
+      <td>Female</td>
+      <td>0</td>
+      <td>No</td>
+      <td>No</td>
+      <td>8</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Fiber optic</td>
+      <td>No</td>
+      <td>...</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Month-to-month</td>
+      <td>Yes</td>
+      <td>Electronic check</td>
+      <td>99.65</td>
+      <td>820.5</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>7892-POOKP</td>
+      <td>Female</td>
+      <td>0</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>28</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Fiber optic</td>
+      <td>No</td>
+      <td>...</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Month-to-month</td>
+      <td>Yes</td>
+      <td>Electronic check</td>
+      <td>104.80</td>
+      <td>3046.05</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>0280-XJGEX</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>No</td>
+      <td>No</td>
+      <td>49</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Fiber optic</td>
+      <td>No</td>
+      <td>...</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Month-to-month</td>
+      <td>Yes</td>
+      <td>Bank transfer (automatic)</td>
+      <td>103.70</td>
+      <td>5036.3</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>7021</td>
+      <td>1699-HPSBG</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>No</td>
+      <td>No</td>
+      <td>12</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>DSL</td>
+      <td>No</td>
+      <td>...</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>One year</td>
+      <td>Yes</td>
+      <td>Electronic check</td>
+      <td>59.80</td>
+      <td>727.8</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>7026</td>
+      <td>8775-CEBBJ</td>
+      <td>Female</td>
+      <td>0</td>
+      <td>No</td>
+      <td>No</td>
+      <td>9</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>DSL</td>
+      <td>No</td>
+      <td>...</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Month-to-month</td>
+      <td>Yes</td>
+      <td>Bank transfer (automatic)</td>
+      <td>44.20</td>
+      <td>403.35</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>7032</td>
+      <td>6894-LFHLY</td>
+      <td>Male</td>
+      <td>1</td>
+      <td>No</td>
+      <td>No</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Fiber optic</td>
+      <td>No</td>
+      <td>...</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Month-to-month</td>
+      <td>Yes</td>
+      <td>Electronic check</td>
+      <td>75.75</td>
+      <td>75.75</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>7034</td>
+      <td>0639-TSIQW</td>
+      <td>Female</td>
+      <td>0</td>
+      <td>No</td>
+      <td>No</td>
+      <td>67</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Fiber optic</td>
+      <td>Yes</td>
+      <td>...</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Month-to-month</td>
+      <td>Yes</td>
+      <td>Credit card (automatic)</td>
+      <td>102.95</td>
+      <td>6886.25</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>7041</td>
+      <td>8361-LTMKD</td>
+      <td>Male</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Fiber optic</td>
+      <td>No</td>
+      <td>...</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Month-to-month</td>
+      <td>Yes</td>
+      <td>Mailed check</td>
+      <td>74.40</td>
+      <td>306.6</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+<p>1869 rows × 21 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
