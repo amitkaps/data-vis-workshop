@@ -19,4 +19,4 @@ clean:
 	-rm $(TARGETS) push
 
 loop:
-	@while sleep 60; do make; done
+	@while sleep 10; do make; done
