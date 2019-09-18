@@ -13478,12 +13478,12 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;area&quot;</span><span class="p">,</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;sales&quot;</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;area:N&quot;</span><span class="p">,</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;sales:N&quot;</span>
 <span class="p">)</span>
 </pre></div>
 
@@ -13497,7 +13497,51 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
+
+
+
+
+<div class="output_png output_subarea output_execute_result">
+<img src="data:image/png;base64,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"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Encoding">Encoding<a class="anchor-link" href="#Encoding">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;area:N&quot;</span><span class="p">,</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;sales:Q&quot;</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
