@@ -13672,13 +13672,89 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">vis1</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{
+  &#34;$schema&#34;: &#34;https://vega.github.io/schema/vega-lite/v3.4.0.json&#34;,
+  &#34;config&#34;: {
+    &#34;mark&#34;: {
+      &#34;tooltip&#34;: null
+    },
+    &#34;view&#34;: {
+      &#34;height&#34;: 300,
+      &#34;width&#34;: 400
+    }
+  },
+  &#34;data&#34;: {
+    &#34;name&#34;: &#34;data-e9a1bf97bac3c6f8642dc2ef7d8e4b49&#34;
+  },
+  &#34;datasets&#34;: {
+    &#34;data-e9a1bf97bac3c6f8642dc2ef7d8e4b49&#34;: [
+      {
+        &#34;area&#34;: &#34;North&#34;,
+        &#34;profit&#34;: 2,
+        &#34;sales&#34;: 5
+      },
+      {
+        &#34;area&#34;: &#34;East&#34;,
+        &#34;profit&#34;: 8,
+        &#34;sales&#34;: 25
+      },
+      {
+        &#34;area&#34;: &#34;West&#34;,
+        &#34;profit&#34;: 6,
+        &#34;sales&#34;: 15
+      },
+      {
+        &#34;area&#34;: &#34;South&#34;,
+        &#34;profit&#34;: 5,
+        &#34;sales&#34;: 20
+      },
+      {
+        &#34;area&#34;: &#34;Central&#34;,
+        &#34;profit&#34;: 3,
+        &#34;sales&#34;: 10
+      }
+    ]
+  },
+  &#34;encoding&#34;: {
+    &#34;color&#34;: {
+      &#34;field&#34;: &#34;area&#34;,
+      &#34;type&#34;: &#34;nominal&#34;
+    },
+    &#34;x&#34;: {
+      &#34;field&#34;: &#34;sales&#34;,
+      &#34;type&#34;: &#34;quantitative&#34;
+    },
+    &#34;y&#34;: {
+      &#34;field&#34;: &#34;area&#34;,
+      &#34;type&#34;: &#34;nominal&#34;
+    }
+  },
+  &#34;mark&#34;: &#34;bar&#34;
+}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
