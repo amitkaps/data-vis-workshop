@@ -14104,69 +14104,13 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[100]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vis2</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vis2</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;simple.html&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_text output_subarea ">
-<pre><span class="ansi-red-fg">Signature:</span>
-vis2<span class="ansi-blue-fg">.</span>save<span class="ansi-blue-fg">(</span>
-    fp<span class="ansi-blue-fg">,</span>
-    format<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span>
-    override_data_transformer<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">,</span>
-    scale_factor<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1.0</span><span class="ansi-blue-fg">,</span>
-    vegalite_version<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;3.4.0&#39;</span><span class="ansi-blue-fg">,</span>
-    vega_version<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;5&#39;</span><span class="ansi-blue-fg">,</span>
-    vegaembed_version<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;4&#39;</span><span class="ansi-blue-fg">,</span>
-    <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">,</span>
-<span class="ansi-blue-fg">)</span>
-<span class="ansi-red-fg">Docstring:</span>
-Save a chart to file in a variety of formats
-
-Supported formats are json, html, png, svg
-
-Parameters
-----------
-fp : string filename or file-like object
-    file in which to write the chart.
-format : string (optional)
-    the format to write: one of [&#39;json&#39;, &#39;html&#39;, &#39;png&#39;, &#39;svg&#39;].
-    If not specified, the format will be determined from the filename.
-override_data_transformer : boolean (optional)
-    If True (default), then the save action will be done with
-    the MaxRowsError disabled. If False, then do not change the data
-    transformer.
-scale_factor : float
-    For svg or png formats, scale the image by this factor when saving.
-    This can be used to control the size or resolution of the output.
-    Default is 1.0
-**kwargs :
-    Additional keyword arguments are passed to the output method
-    associated with the specified format.
-<span class="ansi-red-fg">File:</span>      ~/miniconda3/envs/vis/lib/python3.6/site-packages/altair/vegalite/v3/api.py
-<span class="ansi-red-fg">Type:</span>      method
-</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
