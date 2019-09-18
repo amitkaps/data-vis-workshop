@@ -13315,12 +13315,123 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Mark-&amp;-Encoding">Mark &amp; Encoding<a class="anchor-link" href="#Mark-&amp;-Encoding">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_png output_subarea output_execute_result">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABIklEQVRIS+2WMUrEQBRA3y9sZFHERizdwkoREfEOpk+OEk/gHCXpZ+8gIiJaWcRSbESUxcbiy2yy4Eqy2TWzppkpk2HezOORjNDTkJ64BPC/ma9VXRSF+t7BcDicYTWCf0/sshF3kAAOqicN1cXwM64oza4Q2Z88U320JjmbF5+XuKI0G4Osz4L005pk0ATvDI7S7A7kEPQL5KEE6QHIGui9NclRHdwDOP8ABgovIxPvOsh5mj8L7ABja+KN1YAv8jeUTeDWmvjEQaI0vwGOEd7tZby1GrCLCjl1qhV5dRBBtyvV102RdVZdnrCHuKYaq8j2qriemqKazvdy4r/8LAK4jLJmtH0yl9UdVM9VvazOtvkLXX3aFvHxPlzofVhcaI1v0HzkH/fXNioAAAAASUVORK5CYII="
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sample</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[20]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>area      object
+sales      int64
+profit     int64
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;area&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[19]:</div>
+
+
+
+
+<div class="output_png output_subarea output_execute_result">
+<img src="data:image/png;base64,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"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### </span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
