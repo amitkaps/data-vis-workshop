@@ -13303,7 +13303,9 @@ div#notebook {
     <span class="k">return</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
             <span class="n">selection</span>
             <span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-            <span class="n">x</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+            <span class="n">x</span><span class="o">=</span><span class="s2">&quot;sales&quot;</span>
+            <span class="n">y</span><span class="o">=</span><span class="s2">&quot;profit&quot;</span>
+            <span class="n">color</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selection</span><span class="p">,</span> <span class="s2">&quot;area&quot;</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="p">)</span>
             <span class="p">)</span>
     
 </pre></div>
