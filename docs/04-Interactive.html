@@ -13555,7 +13555,8 @@ div#notebook {
 
 <span class="n">alt</span><span class="o">.</span><span class="n">vconcat</span><span class="p">(</span>
     <span class="n">base</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;date:T&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="n">brush</span><span class="p">))),</span>
-    <span class="n">base</span><span class="o">.</span><span class="n">add_selection</span><span class="p">()</span>
+    <span class="n">base</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">brush</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">60</span><span class="p">),</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">sp500</span>
 <span class="p">)</span>
 </pre></div>
 
