@@ -13283,6 +13283,86 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">churn</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;Tenure:Q&quot;</span><span class="p">,</span> <span class="nb">bin</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">BinParams</span><span class="p">(</span><span class="n">maxbins</span><span class="o">=</span><span class="mi">20</span><span class="p">)),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s2">&quot;count()&quot;</span><span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="s2">&quot;Churn&quot;</span><span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;Churn&quot;</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Facet Example&quot;</span>
+<span class="p">)</span><span class="o">.</span><span class="n">resolve_scale</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;independent&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">SchemaValidationError</span>                     Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-12-1d7b93ebe6a5&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      8</span>     height<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">250</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span>     title<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#34;Facet Example&#34;</span>
+<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg"> ).resolve_scale(axis=&#34;independent&#34;)
+</span>
+<span class="ansi-green-fg">~/miniconda3/envs/vis/lib/python3.6/site-packages/altair/vegalite/v3/api.py</span> in <span class="ansi-cyan-fg">resolve_scale</span><span class="ansi-blue-fg">(self, *args, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1378</span>     <span class="ansi-blue-fg">@</span>utils<span class="ansi-blue-fg">.</span>use_signature<span class="ansi-blue-fg">(</span>core<span class="ansi-blue-fg">.</span>ScaleResolveMap<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1379</span>     <span class="ansi-green-fg">def</span> resolve_scale<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 1380</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_set_resolve<span class="ansi-blue-fg">(</span>scale<span class="ansi-blue-fg">=</span>core<span class="ansi-blue-fg">.</span>ScaleResolveMap<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1381</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1382</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/vis/lib/python3.6/site-packages/altair/vegalite/v3/schema/core.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, color, fill, fillOpacity, opacity, shape, size, stroke, strokeOpacity, strokeWidth, x, y, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">  11925</span>                                               opacity<span class="ansi-blue-fg">=</span>opacity<span class="ansi-blue-fg">,</span> shape<span class="ansi-blue-fg">=</span>shape<span class="ansi-blue-fg">,</span> size<span class="ansi-blue-fg">=</span>size<span class="ansi-blue-fg">,</span> stroke<span class="ansi-blue-fg">=</span>stroke<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">  11926</span>                                               strokeOpacity<span class="ansi-blue-fg">=</span>strokeOpacity<span class="ansi-blue-fg">,</span> strokeWidth<span class="ansi-blue-fg">=</span>strokeWidth<span class="ansi-blue-fg">,</span> x<span class="ansi-blue-fg">=</span>x<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg">&gt; 11927</span><span class="ansi-red-fg">                                               y=y, **kwds)
+</span><span class="ansi-green-intense-fg ansi-bold">  11928</span> 
+<span class="ansi-green-intense-fg ansi-bold">  11929</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/vis/lib/python3.6/site-packages/altair/utils/schemapi.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, *args, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    152</span> 
+<span class="ansi-green-intense-fg ansi-bold">    153</span>         <span class="ansi-green-fg">if</span> DEBUG_MODE <span class="ansi-green-fg">and</span> self<span class="ansi-blue-fg">.</span>_class_is_valid_at_instantiation<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 154</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>to_dict<span class="ansi-blue-fg">(</span>validate<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    155</span> 
+<span class="ansi-green-intense-fg ansi-bold">    156</span>     <span class="ansi-green-fg">def</span> copy<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> deep<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">,</span> ignore<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/vis/lib/python3.6/site-packages/altair/utils/schemapi.py</span> in <span class="ansi-cyan-fg">to_dict</span><span class="ansi-blue-fg">(self, validate, ignore, context)</span>
+<span class="ansi-green-intense-fg ansi-bold">    300</span>                 self<span class="ansi-blue-fg">.</span>validate<span class="ansi-blue-fg">(</span>result<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    301</span>             <span class="ansi-green-fg">except</span> jsonschema<span class="ansi-blue-fg">.</span>ValidationError <span class="ansi-green-fg">as</span> err<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 302</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">raise</span> SchemaValidationError<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> err<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    303</span>         <span class="ansi-green-fg">return</span> result
+<span class="ansi-green-intense-fg ansi-bold">    304</span> 
+
+<span class="ansi-red-fg">SchemaValidationError</span>: Invalid specification
+
+        altair.vegalite.v3.schema.core.ScaleResolveMap, validating &#39;additionalProperties&#39;
+
+        Additional properties are not allowed (&#39;axis&#39; was unexpected)
+        </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
