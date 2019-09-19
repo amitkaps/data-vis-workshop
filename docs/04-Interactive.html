@@ -13479,7 +13479,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">selectChurn</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">sele</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">selectChurn</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Select&quot;</span><span class="p">,</span>
+    <span class="n">field</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Churn&#39;</span><span class="p">],</span>
+    
+<span class="p">)</span>
 </pre></div>
 
     </div>
