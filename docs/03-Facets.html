@@ -13283,7 +13283,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">churn</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
@@ -13295,7 +13295,7 @@ div#notebook {
     <span class="n">width</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span>
     <span class="n">height</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span>
     <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Facet Example&quot;</span>
-<span class="p">)</span><span class="o">.</span><span class="n">resolve_scale</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;independent&quot;</span><span class="p">)</span>
+<span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13315,11 +13315,13 @@ div#notebook {
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">SchemaValidationError</span>                     Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-12-1d7b93ebe6a5&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">&lt;ipython-input-13-17966e6858fe&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     alt<span class="ansi-blue-fg">.</span>Column<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Churn&#34;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span>     alt<span class="ansi-blue-fg">.</span>Color<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Churn&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 6</span><span class="ansi-red-fg"> </span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>resolve_scale<span class="ansi-blue-fg">(</span>axis<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#34;independent&#34;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>properties<span class="ansi-blue-fg">(</span>
+<span class="ansi-green-intense-fg ansi-bold">      7</span>     width<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">250</span><span class="ansi-blue-fg">,</span>
 <span class="ansi-green-intense-fg ansi-bold">      8</span>     height<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">250</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span>     title<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#34;Facet Example&#34;</span>
-<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg"> ).resolve_scale(axis=&#34;independent&#34;)
-</span>
+
 <span class="ansi-green-fg">~/miniconda3/envs/vis/lib/python3.6/site-packages/altair/vegalite/v3/api.py</span> in <span class="ansi-cyan-fg">resolve_scale</span><span class="ansi-blue-fg">(self, *args, **kwargs)</span>
 <span class="ansi-green-intense-fg ansi-bold">   1378</span>     <span class="ansi-blue-fg">@</span>utils<span class="ansi-blue-fg">.</span>use_signature<span class="ansi-blue-fg">(</span>core<span class="ansi-blue-fg">.</span>ScaleResolveMap<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">   1379</span>     <span class="ansi-green-fg">def</span> resolve_scale<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
