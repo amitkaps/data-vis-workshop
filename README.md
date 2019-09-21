@@ -1,5 +1,38 @@
 # Data Visualisation Workshop
 
+
+### Notes and Slides
+
+- [Introduction](notes/Introduction.pdf): Overall introductions
+- [Representation](notes/Representation.pdf): Walk though different chart guidelines
+- [Aesthetics](notes/Aesthetics.pdf): Include decoding guidelines, color, chart-junk
+- [Interaction](notes/Interaction.pdf): Overview on animation and interation
+- [Model Vis](notes/Modelvis.pdf): Concepts on model visualisation
+- [Storytelling](notes/Storytelling.pdf): Storytelling and link to data visualisation
+- [Dashboards](notes/Dasboard.pdf): Concepts on structuring an interactive dashboard
+- [Tools & Resources](notes/Resources.pdf): List of tools and resources for visualisation
+
+
+### In-Class Notebooks
+- [01-Simple](01-Simple.html)
+- [02-Telco-Basic](02-Telco-Basic.html)
+- [03-Facets](03-Facets.html)
+- [04-Interactive](04-Interactive.html)
+- [05-Chart-Serving](05-chart.py)
+
+
+### Additional Resources:
+
+- Visualisation Libraries: 
+    - [pyviz.org](http://pyviz.org): Overview on all python libraries got data visualisation
+    - [Altair](http://altair-viz.github.io): Python library for Interactive Grammar of Graphics
+    - [Vega-lite](http://vega.github.io/vega-lite): JS library for Interactive Grammar of Graphics
+- Chart Guidelines e.g. Visual Vocabulary
+    - FT Version: [ft.com/vocabulary](http://ft.com/vocabulary)
+    - Vega-lite Version: [gramener.github.io/visual-vocabulary-vega/](https://gramener.github.io/visual-vocabulary-vega/)
+
+
+
 ### Session Plan
 
 **Day 1**
